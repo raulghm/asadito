@@ -1,0 +1,67 @@
+.Asado {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 10px;
+}
+
+.Asado-body {
+	border-radius: 10px;
+	text-align: center;
+	padding: 20px 40px;
+	background-image: url(https://image.freepik.com/free-vector/chalkboard_1053-583.jpg);
+	background-size: cover;
+	background-position: 50%;
+	color: #fff;
+  box-shadow: 0 0 8px 4px rgba(0,0,0,.4);
+  opacity: .9;
+}
+
+.Asado h1 {
+	font-family: 'Abril Fatface';
+	font-weight: lighter;
+	font-size: 3.6rem;
+	letter-spacing: 2px;
+	margin: 20px 0;
+}
+
+.Asado h2 {
+	font-size: 2rem;
+}
+
+.Asado h3 {
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+.Asado input[type="number"],
+.Asado select {
+	font-size: 1.4rem;
+	border-radius: 4px;
+	border: 0;
+	padding: .2em;
+	outline: 0;
+}
+
+.Asado-select {
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+.Asado-select:last-child {
+	border: 0;
+}
+
+.Asado-select-body--column {
+	display: grid;
+	grid-auto-flow: column;
+}
+
+.Asado hr {
+	border: 0;
+	border-bottom: 1px solid #fff;
+	opacity: .4;
+}
