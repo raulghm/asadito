@@ -2,7 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Cutive Mono', sans-serif;
-  background-image: url(https://images.unsplash.com/photo-1498092590708-048e0e2f46d7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1c6a1399ca6172f2ef16a89f4023a0cd&auto=format&fit=crop&w=3300&q=80);
+  background-color: #252525;
+  background-image: url(./assets/img/photo-1498092590708-048e0e2f46d7.jpeg);
   background-size: cover;
   background-position: 50%;
   font-weight: lighter;
