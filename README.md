@@ -1,6 +1,6 @@
 # Calculadora de Asado en React 🥩🍴
 
-> Simple app para conocer que y cuanto comprar en un asado y cuanto debe pagar cada comensal.
+> Simple app para conocer qué y cuánto comprar en un asado y cuánto debe pagar cada comensal.
 
 _Valores de referencia para comprar en Chile._
 
@@ -13,21 +13,21 @@ Basado en el clon inicial https://github.com/juanbrujo/vue-calculaasado
 - [x] Calcular costo por adulto
 - [x] Mostrar cantidad de carne a comprar
 - [x] Listar opciones de carnes
-- [ ] Sumar costo del carbon
+- [ ] Sumar costo del carbón
 - [ ] Mostrar costo opcional de embutidos + pan
 - [ ] Incluir verduras y agregados ?
-- [ ] Incluir liquidos ?
+- [ ] Incluir líquidos ?
 
 ## Consideraciones 👀
 
-- Solo se tomaron en cuenta carnes de vacuno al vacio.
-- Se inluyen los siguientes cortes especiales para parrilla:
+- Solo se tomaron en cuenta carnes de vacuno al vacío.
+- Se incluyen los siguientes cortes especiales para parrilla:
   - Abastero
   - Carnicero
   - Tapabarriga
   - Asado de tira
   - Tapapecho
-  - Sobre costila
+  - Sobre costilla
   - Huachalomo
   - Punta paleta
   - Plateada
@@ -46,5 +46,5 @@ Basado en el clon inicial https://github.com/juanbrujo/vue-calculaasado
 - Se tomaron como referencias valores de supermercados Lider y Jumbo, promediando estos valores y segmentando en 4 grupos para generar distintos presupuestos.
 - No se consideran precios en oferta, solo valores normales.
 - Salvo algunos casos existe una diferencia de hasta 2000 pesos entre tipo de carne por segmento.
-- Para calcular cantidad de carne se consideran los siguientes gramos que come comumente cada persona: 350 hombre, 250 mujer y 200 un niño.
+- Para calcular cantidad de carne se consideran los siguientes gramos que come comúnmente cada persona: 350 hombre, 250 mujer y 200 un niño.
 - La división de valores considera solo adultos, los niños no pagan.
