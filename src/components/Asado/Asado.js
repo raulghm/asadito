@@ -142,100 +142,102 @@ class Asado extends Component {
       title,
       budgets,
       budgetSelected,
-      peopleCount = this.peopleCount()
+      peopleCount = this.peopleCount(),
     } = this.state
 
     return (
       <div className="Asado">
-        <div className="Asado-body">
-          <h1>Calculadora de Asado 🥩🍴</h1>
+        <div className="Asado-wrapper">
+          <div className="Asado-body">
+            <h1>Calculadora de Asado 🥩🍴</h1>
 
-          <h2>{title}</h2>
+            <h2>{title}</h2>
 
-          <div className="Asado-select">
-            <h3>1- Indica la cantidad de comensales</h3>
-
-            <div className="Asado-select-body Asado-select-body--column">
-              <div className="Asado-select-item">
-                <h4>Hombres 🙅🏻‍♂️</h4>
-                <input
-                  type="number"
-                  pattern="[0-9]*"
-                  min={0}
-                  max={100}
-                  placeholder="0"
-                  onChange={this.handleMen.bind(this)}
-                />
-              </div>
-
-              <div className="Asado-select-item">
-                <h4>Mujeres 💁‍♀️</h4>
-                <input
-                  type="number"
-                  pattern="[0-9]*"
-                  min={0}
-                  max={100}
-                  placeholder="0"
-                  onChange={this.handleWomen.bind(this)}
-                />
-              </div>
-
-              <div className="Asado-select-item">
-                <h4>Niños 🧒</h4>
-                <input
-                  type="number"
-                  pattern="[0-9]*"
-                  min={0}
-                  max={100}
-                  placeholder="0"
-                  onChange={this.handleChildren.bind(this)}
-                />
-              </div>
-            </div>
-
-            <h3>Total comensales: {peopleCount}</h3>
-          </div>
-
-          { peopleCount > 0 &&
             <div className="Asado-select">
-              <h3>2- Selecciona tu presupuesto</h3>
+              <h3>1- Indica la cantidad de comensales</h3>
 
               <div className="Asado-select-body Asado-select-body--column">
                 <div className="Asado-select-item">
-                  <select onChange={this.handleBudget.bind(this)}>
-                    <option>Selecciona...</option>
-                    { budgets.map(item => {
-                      return <option
-                        value={item.id}
-                        key={item.id}
-                      >{item.name}</option>
-                    }) }
-                  </select>
+                  <h4>Hombres 👨</h4>
+                  <input
+                    type="number"
+                    pattern="[0-9]*"
+                    min={0}
+                    max={100}
+                    placeholder="0"
+                    onChange={this.handleMen.bind(this)}
+                  />
+                </div>
+
+                <div className="Asado-select-item">
+                  <h4>Mujeres 👩</h4>
+                  <input
+                    type="number"
+                    pattern="[0-9]*"
+                    min={0}
+                    max={100}
+                    placeholder="0"
+                    onChange={this.handleWomen.bind(this)}
+                  />
+                </div>
+
+                <div className="Asado-select-item">
+                  <h4>Niños 🧒</h4>
+                  <input
+                    type="number"
+                    pattern="[0-9]*"
+                    min={0}
+                    max={100}
+                    placeholder="0"
+                    onChange={this.handleChildren.bind(this)}
+                  />
                 </div>
               </div>
+
+              <h3>Total comensales: {peopleCount}</h3>
             </div>
-          }
 
-          { budgetSelected &&
-            <div className="Asado-select">
-              <h3>3- Resultados</h3>
+            { peopleCount > 0 &&
+              <div className="Asado-select">
+                <h3>2- Selecciona tu presupuesto</h3>
 
-              <div className="Asado-select-body">
-                Opciones de carnes para comprar:
-                <p>{ budgetSelected.options.map((option, i) => {
-                  if (i === budgetSelected.options.length - 1) {
-                    return `${option}.`
-                  } else {
-                    return `${option}, `
-                  }
-                }) }</p>
-
-                <h4>{ this.meatCount() + 'kg de carne' } 🥩</h4>
-                <h4>Costo total: ${ this.totalPrice() } 👈</h4>
-                <h4>Costo cada adulto: ${ this.eachPrice() } 🤵</h4>
+                <div className="Asado-select-body Asado-select-body--column">
+                  <div className="Asado-select-item">
+                    <select onChange={this.handleBudget.bind(this)}>
+                      <option>Selecciona...</option>
+                      { budgets.map(item => {
+                        return <option
+                          value={item.id}
+                          key={item.id}
+                        >{item.name}</option>
+                      }) }
+                    </select>
+                  </div>
+                </div>
               </div>
-            </div>
-          }
+            }
+
+            { peopleCount > 0 && budgetSelected &&
+              <div className="Asado-select">
+                <h3>3- Resultados</h3>
+
+                <div className="Asado-select-body">
+                  Opciones de carnes para comprar:
+                  <p>{ budgetSelected.options.map((option, i) => {
+                    if (i === budgetSelected.options.length - 1) {
+                      return `${option}.`
+                    } else {
+                      return `${option}, `
+                    }
+                  }) }</p>
+
+                  <h4>{ this.meatCount() + 'kg de carne' } 🥩</h4>
+                  <h4>Costo total: ${ this.totalPrice().toLocaleString('es-ES') } 👈</h4>
+                  <h4>Costo cada adulto: ${ this.eachPrice().toLocaleString('es-ES') } ☝️</h4>
+                </div>
+              </div>
+            }
+          </div>
         </div>
 
         <Footer />
