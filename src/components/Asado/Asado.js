@@ -112,6 +112,10 @@ class Asado extends Component {
     , -1)
   }
 
+  formatPrice = (number) => {
+    return number.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1.")
+  }
+
   render() {
     const {
       title,
@@ -126,10 +130,8 @@ class Asado extends Component {
           <h1>Calculadora de Asado</h1>
 
           <h2>{title}</h2>
-          
           <div className="Asado-select">
             <h3>1- Indica la cantidad de comensales</h3>
-
             <div className="Asado-select-body Asado-select-body--column">
               <div className="Asado-select-item">
                 <h4>Hombres</h4>
@@ -142,7 +144,6 @@ class Asado extends Component {
                   onChange={this.handleMen.bind(this)}
                 />
               </div>
-
               <div className="Asado-select-item">
                 <h4>Mujeres</h4>
                 <input 
@@ -154,7 +155,6 @@ class Asado extends Component {
                   onChange={this.handleWomen.bind(this)}
                 />
               </div>
-
               <div className="Asado-select-item">
                 <h4>Niños</h4>
                 <input 
@@ -167,14 +167,12 @@ class Asado extends Component {
                 />
               </div>
             </div>
-            
             <h3>Total comensales: {peopleCount}</h3>
           </div>
 
           { peopleCount > 0 &&
             <div className="Asado-select">
               <h3>2- Selecciona tu presupuesto</h3>
-
               <div className="Asado-select-body Asado-select-body--column">
                 <div className="Asado-select-item">
                   <select onChange={this.handleBudget.bind(this)}>
@@ -194,17 +192,14 @@ class Asado extends Component {
           { budgetSelected &&
             <div className="Asado-select">
               <h3>Resultados</h3>
-
               <div className="Asado-select-body">
                 Opciones de carnes para comprar:
                 <p>{budgetSelected.options}</p>
-
                 { this.meatCount() + 'kg de carne' }
                 <br/>
-
-                Costo total: ${ this.totalPrice() }
+                Costo total: ${ this.formatPrice(this.totalPrice()) }
                 <br/>
-                Costo cada adulto: ${ this.eachPrice() }
+                Costo cada adulto: ${ this.formatPrice(this.eachPrice()) }
               </div>
             </div>
           }        
