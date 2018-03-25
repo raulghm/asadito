@@ -1,0 +1,14 @@
+.Footer {
+  text-align: center;
+  color: #fff;
+  margin: 20px;
+}
+
+.Footer a,
+.Footer a:active {
+  color: #fff;
+}
+
+.Footer span {
+  vertical-align: middle;
+}

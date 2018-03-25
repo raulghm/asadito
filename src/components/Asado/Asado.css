@@ -1,40 +1,68 @@
 .Asado {
   max-width: 800px;
-  margin: 0 auto;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  padding: 10px;
+  margin: 10px auto;
 }
 
 .Asado-body {
-	border-radius: 10px;
 	text-align: center;
-	padding: 20px 40px;
+	padding: 20px;
 	background-image: url(https://image.freepik.com/free-vector/chalkboard_1053-583.jpg);
 	background-size: cover;
 	background-position: 50%;
 	color: #fff;
-  box-shadow: 0 0 8px 4px rgba(0,0,0,.4);
+  box-shadow: 0 0 9px 1px rgba(0,0,0,.6);
   opacity: .9;
+}
+
+@media (min-width: 30em) {
+  .Asado-body {
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 39.8em) {
+  .Asado-body {
+    padding: 40px 60px;
+  }
 }
 
 .Asado h1 {
 	font-family: 'Abril Fatface';
 	font-weight: lighter;
-	font-size: 3.6rem;
+	font-size: 2rem;
 	letter-spacing: 2px;
 	margin: 20px 0;
 }
 
+@media (min-width: 39.8em) {
+  .Asado h1 {
+    font-size: 3rem;
+  }
+}
+
 .Asado h2 {
-	font-size: 2rem;
+	font-size: 1.6rem;
+}
+
+@media (min-width: 39.8em) {
+  .Asado h2 {
+    font-size: 2rem;
+  }
 }
 
 .Asado h3 {
-	font-size: 1.4rem;
-	font-weight: bold;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media (min-width: 39.8em) {
+  .Asado h3 {
+    font-size: 1.4rem;
+  }
+}
+
+.Asado h4 {
+	margin: 10px;
 }
 
 .Asado input[type="number"],
