@@ -10,6 +10,6 @@ Basado en el clon https://github.com/juanbrujo/vue-calculaasado
 - [x] Calcular costo por adulto
 - [x] Mostrar cantidad de carne a comprar
 - [x] Listar opciones de carnes
-- [ ] Sumar costo del carbon
+- [ ] Sumar costo del carbón
 - [ ] Mostrar costo opcional de embutidos + pan
 - [ ] :B
