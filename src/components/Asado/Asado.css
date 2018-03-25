@@ -3,27 +3,42 @@
   margin: 10px auto;
 }
 
-.Asado-body {
+.Asado-wrapper {
 	text-align: center;
 	padding: 20px;
-	background-image: url(https://image.freepik.com/free-vector/chalkboard_1053-583.jpg);
-	background-size: cover;
-	background-position: 50%;
 	color: #fff;
-  box-shadow: 0 0 9px 1px rgba(0,0,0,.6);
+  position: relative;
+  z-index: 1;
+}
+
+.Asado-wrapper:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../../assets/img/img-chalkboard.jpg);
+  background-size: cover;
+  background-position: 50%;
   opacity: .9;
+  box-shadow: 0 0 9px 1px rgba(0,0,0,.6);
 }
 
 @media (min-width: 30em) {
-  .Asado-body {
+  .Asado-wrapper:before {
     border-radius: 10px;
   }
 }
 
 @media (min-width: 39.8em) {
-  .Asado-body {
+  .Asado-wrapper {
     padding: 40px 60px;
   }
+}
+
+.Asado-body {
+  position: relative;
 }
 
 .Asado h1 {
