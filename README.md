@@ -1,10 +1,10 @@
 # Calculadora de Asado en React 🥩🍴
 
-> Simple app para conocer qué y cuánto comprar en un asado y cuánto debe pagar cada comensal.
+> Simple app para conocer qué y cuánto comprar en un asado.
 
 _Valores de referencia para comprar en Chile._
 
-Basado en el clon inicial https://github.com/juanbrujo/vue-calculaasado
+Basado en el clon https://github.com/juanbrujo/vue-calculaasado
 
 ## Features ✔
 
