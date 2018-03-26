@@ -149,7 +149,7 @@ class Asado extends Component {
       <div className="Asado">
         <div className="Asado-wrapper">
           <div className="Asado-body">
-            <h1>Calculadora de Asado 🥩🍴</h1>
+            <h1>Calculadora de Asado 🍖</h1>
 
             <h2>{title}</h2>
 
@@ -182,7 +182,7 @@ class Asado extends Component {
                 </div>
 
                 <div className="Asado-select-item">
-                  <h4>Niños 🧒</h4>
+                  <h4>Niños 👶</h4>
                   <input
                     type="number"
                     pattern="[0-9]*"
@@ -231,7 +231,7 @@ class Asado extends Component {
                     }
                   }) }</p>
 
-                  <h4>{ this.meatCount() + 'kg de carne' } 🥩</h4>
+                  <h4>{ this.meatCount() + 'kg de carne' } 🍖</h4>
                   <h4>Costo total: ${ this.totalPrice().toLocaleString('es-ES') } 👈</h4>
                   <h4>Costo cada adulto: ${ this.eachPrice().toLocaleString('es-ES') } ☝️</h4>
                 </div>
