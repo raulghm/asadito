@@ -98,6 +98,16 @@
 	border: 0;
 }
 
+.Asado-select-item h4 span {
+  display: block;
+}
+
+@media (min-width: 39.8em) {
+  .Asado-select-item h4 span {
+    display: inline-block;
+  }
+}
+
 .Asado-select-body--column {
 	display: grid;
 	grid-auto-flow: column;

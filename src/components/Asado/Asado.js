@@ -149,7 +149,7 @@ class Asado extends Component {
       <div className="Asado">
         <div className="Asado-wrapper">
           <div className="Asado-body">
-            <h1>Calculadora de Asado 🍖</h1>
+            <h1>Calculadora de Asado <span role="img" aria-label="meat">🍖</span></h1>
 
             <h2>{title}</h2>
 
@@ -158,7 +158,7 @@ class Asado extends Component {
 
               <div className="Asado-select-body Asado-select-body--column">
                 <div className="Asado-select-item">
-                  <h4>Hombres 👨</h4>
+                  <h4>Hombres <span role="img" aria-label="men">👨</span></h4>
                   <input
                     type="number"
                     pattern="[0-9]*"
@@ -170,7 +170,7 @@ class Asado extends Component {
                 </div>
 
                 <div className="Asado-select-item">
-                  <h4>Mujeres 👩</h4>
+                  <h4>Mujeres <span role="img" aria-label="women">👩</span></h4>
                   <input
                     type="number"
                     pattern="[0-9]*"
@@ -182,7 +182,7 @@ class Asado extends Component {
                 </div>
 
                 <div className="Asado-select-item">
-                  <h4>Niños 👶</h4>
+                  <h4>Niños <span role="img" aria-label="children">👶</span></h4>
                   <input
                     type="number"
                     pattern="[0-9]*"
@@ -231,9 +231,9 @@ class Asado extends Component {
                     }
                   }) }</p>
 
-                  <h4>{ this.meatCount() + 'kg de carne' } 🍖</h4>
-                  <h4>Costo total: ${ this.totalPrice().toLocaleString('es-ES') } 👈</h4>
-                  <h4>Costo cada adulto: ${ this.eachPrice().toLocaleString('es-ES') } ☝️</h4>
+                  <h4>{ this.meatCount() + 'kg de carne' } <span role="img" aria-label="meat">🍖</span></h4>
+                  <h4>Costo total: ${ this.totalPrice().toLocaleString('es-ES') } <span role="img" aria-label="meat">👈</span></h4>
+                  <h4>Costo cada adulto: ${ this.eachPrice().toLocaleString('es-ES') } <span role="img" aria-label="meat">☝</span>️</h4>
                 </div>
               </div>
             }
