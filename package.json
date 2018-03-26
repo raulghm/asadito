@@ -1,6 +1,6 @@
 {
   "name": "react-asado",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "dependencies": {
     "react": "^16.2.0",
