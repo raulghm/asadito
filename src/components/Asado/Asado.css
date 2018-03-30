@@ -98,6 +98,26 @@
 	border: 0;
 }
 
+.Asado-input {
+  margin-bottom: 14px;
+  user-select: none;
+}
+
+.Asado-input--checkbox {
+  margin-bottom: 10px;
+}
+
+.Asado-input--checkbox label {
+  cursor: pointer;
+}
+
+.Asado-input--checkbox input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+  display: inline-block;
+}
+
 .Asado-select-item h4 span {
   display: block;
 }
@@ -117,4 +137,12 @@
 	border: 0;
 	border-bottom: 1px solid #fff;
 	opacity: .4;
+}
+
+.Asado li {
+  list-style: none;
+}
+
+.Asado span[role="img"] {
+  margin-left: 4px;
 }
