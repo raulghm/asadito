@@ -111,9 +111,11 @@ class Asado extends Component {
   }
 
   peopleCount = () => {
-    return this.state.user.men +
-          this.state.user.women +
-          this.state.user.children
+    const computed = this.state.user.men +
+      this.state.user.women +
+      this.state.user.children
+
+    return computed ? computed : 0
   }
 
   meatCount = () => {
