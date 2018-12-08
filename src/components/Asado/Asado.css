@@ -80,6 +80,11 @@
 	margin: 10px;
 }
 
+.Asado input[type="number"] {
+  width: 90%;
+  max-width: 60px;
+}
+
 .Asado input[type="number"],
 .Asado select {
 	font-size: 1.4rem;
