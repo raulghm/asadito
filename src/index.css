@@ -1,9 +1,10 @@
 body {
   margin: 0;
   padding: 0;
+  height: 100vh;
   font-family: 'Cutive Mono', sans-serif;
   background-color: #252525;
-  background-image: url(./assets/img/photo-1498092590708-048e0e2f46d7.jpeg);
+  background-image: url(./assets/img/photo-1466220549276-aef9ce186540.jpg);
   background-size: cover;
   background-position: 50%;
   font-weight: lighter;
