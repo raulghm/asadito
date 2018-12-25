@@ -9,6 +9,18 @@
 	color: #fff;
   position: relative;
   z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  animation: anim-fadeIn 1s 1s ease forwards;
+}
+
+@keyframes anim-fadeIn {
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
 }
 
 .Asado-wrapper:before {
