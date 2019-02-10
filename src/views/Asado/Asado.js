@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Footer from '../../components/Footer/Footer'
 import './Asado.css'
+import budgets from './budgets'
 
 class Asado extends Component {
   constructor(props) {
@@ -15,64 +16,7 @@ class Asado extends Component {
       },
       breadPrice: 1200,
       carbonPrice: 1156,
-      budgets: [
-        {
-          id: 0,
-          name: 'Económico',
-          options: [
-            'Abastero',
-            'Carnicero',
-            'Tapapecho',
-            'Tapabarriga',
-            'Asado de tira',
-            'Sobre costilla',
-            'Huachalomo',
-            'Punta paleta'
-          ],
-          meatPrice: 5000,
-          sausage: 'Chorizos o salchichas',
-          sausagePrice: 3200
-        },
-        {
-          id: 1,
-          name: 'Medio',
-          options: [
-            'Plateada',
-            'Punta picana',
-            'Asiento',
-            'Lomo liso',
-            'Punta de ganso'
-          ],
-          meatPrice: 7200,
-          sausage: 'Chorizos',
-          sausagePrice: 4000
-        },
-        {
-          id: 2,
-          name: 'Alto',
-          options: [
-            'Lomo vetado',
-            'Palanca',
-            'Filete',
-            'Entraña'
-          ],
-          meatPrice: 10670,
-          sausage: 'Longanizas',
-          sausagePrice: 5800
-        },
-        {
-          id: 3,
-          name: 'Premium',
-          options: [
-            'Wagyu',
-            'Angus',
-            'Lomo vetado premium'
-          ],
-          meatPrice: 25000,
-          sausage: 'Longanizas premium',
-          sausagePrice: 9000
-        }
-      ],
+      budgets,
       budgetIndex: 0,
       budgetSelected: null,
       sausageSelected: false,
@@ -92,11 +36,11 @@ class Asado extends Component {
     user: {...this.state.user, children: parseInt(event.target.value, 10) }
   })
 
-  handleSausage = event => this.setState({
+  handleSausage = () => this.setState({
     sausageSelected: !this.state.sausageSelected
   })
 
-  handleCarbon = event => this.setState({
+  handleCarbon = () => this.setState({
     carbonSelected: !this.state.carbonSelected
   })
 
