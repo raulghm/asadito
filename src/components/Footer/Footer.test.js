@@ -1,12 +1,12 @@
 import React from 'react'
-import Asado from './Asado'
+import Footer from './Footer'
 import { configure, shallow } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 
 configure({ adapter: new Adapter() })
 
-describe('<Asado />', () => {
-  it('should render Asado', () => {
-    shallow(<Asado />)
+describe('<Footer />', () => {
+  it('should render Footer', () => {
+    shallow(<Footer />)
   })
 })
