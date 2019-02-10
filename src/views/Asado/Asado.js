@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Footer from '../Footer/Footer'
+import Footer from '../../components/Footer/Footer'
 import './Asado.css'
 
 class Asado extends Component {
