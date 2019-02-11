@@ -1,6 +1,11 @@
 .Asado {
   max-width: 800px;
-  margin: 10px auto;
+}
+
+@media (min-width: 30em) {
+  .Asado {
+    margin: 10px auto;
+  }
 }
 
 .Asado-wrapper {
@@ -78,18 +83,26 @@
 }
 
 .Asado h3 {
-  font-size: 1.2rem;
   font-weight: bold;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #9E9E9E;
 }
 
 @media (min-width: 39.8em) {
   .Asado h3 {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
 }
 
 .Asado h4 {
 	margin: 10px;
+}
+
+.Asado span[role="img"] {
+  font-size: 2rem;
 }
 
 .Asado input[type="number"] {
@@ -133,6 +146,18 @@
   height: 16px;
   margin-left: 10px;
   display: inline-block;
+  vertical-align: middle;
+}
+
+.Asado-select-item h4 > div {
+  display: none;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 39.8em) {
+  .Asado-select-item h4 > div {
+    display: block;
+  }
 }
 
 .Asado-select-item h4 span {

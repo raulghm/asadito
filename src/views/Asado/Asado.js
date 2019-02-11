@@ -156,15 +156,16 @@ class Asado extends Component {
         <div className="Asado-wrapper">
           <div className="Asado-body">
             <h1>Calculadora de Asado <span role="img" aria-label="meat">🍖</span></h1>
-
             <h2>{title}</h2>
 
-            <div className="Asado-select">
+            <div className="Asado-select Asado-select--users">
               <h3>1- Indica la cantidad de comensales</h3>
 
               <div className="Asado-select-body Asado-select-body--column">
                 <div className="Asado-select-item">
-                  <h4>Hombres <span role="img" aria-label="men">👨</span></h4>
+                  <h4>
+                    <div>Hombres</div>
+                    <span role="img" aria-label="men">👨</span></h4>
                   <input
                     type="number"
                     pattern="[0-9]*"
@@ -176,7 +177,9 @@ class Asado extends Component {
                 </div>
 
                 <div className="Asado-select-item">
-                  <h4>Mujeres <span role="img" aria-label="women">👩</span></h4>
+                  <h4>
+                    <div>Mujeres</div>
+                    <span role="img" aria-label="women">👩</span></h4>
                   <input
                     type="number"
                     pattern="[0-9]*"
@@ -188,7 +191,9 @@ class Asado extends Component {
                 </div>
 
                 <div className="Asado-select-item">
-                  <h4>Niños <span role="img" aria-label="children">👶</span></h4>
+                  <h4>
+                    <div>Niños</div>
+                    <span role="img" aria-label="children">👶</span></h4>
                   <input
                     type="number"
                     pattern="[0-9]*"
@@ -204,7 +209,7 @@ class Asado extends Component {
             </div>
 
             { peopleCount > 0 &&
-              <div className="Asado-select">
+              <div className="Asado-select Asado-select--budgets">
                 <h3>2- Selecciona tu presupuesto</h3>
 
                 <div className="Asado-select-body Asado-select-body--column">
@@ -249,7 +254,7 @@ class Asado extends Component {
             }
 
             { peopleCount > 0 && budgetSelected &&
-              <div className="Asado-select">
+              <div className="Asado-select Asado-select--results">
                 <h3>3- Resultados</h3>
 
                 <div className="Asado-select-body">
