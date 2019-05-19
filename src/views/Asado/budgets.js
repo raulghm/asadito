@@ -33,12 +33,7 @@ const budgets = [
   {
     id: 2,
     name: 'Alto',
-    options: [
-      'Lomo vetado',
-      'Palanca',
-      'Filete',
-      'Entraña'
-    ],
+    options: ['Lomo vetado', 'Palanca', 'Filete', 'Entraña'],
     meatPrice: 10670,
     sausage: 'Longanizas',
     sausagePrice: 5800
@@ -46,11 +41,7 @@ const budgets = [
   {
     id: 3,
     name: 'Premium',
-    options: [
-      'Wagyu',
-      'Angus',
-      'Lomo vetado premium'
-    ],
+    options: ['Wagyu', 'Angus', 'Lomo vetado premium'],
     meatPrice: 25000,
     sausage: 'Longanizas premium',
     sausagePrice: 9000

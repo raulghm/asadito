@@ -29,7 +29,9 @@ describe('<Asado /> mount rendering', () => {
   })
   it('h2 contains correct text', () => {
     const wrapper = mount(<Asado />)
-    expect(wrapper.find('h2').text()).toBe('¿Cuánto debo comprar para el asado?')
+    expect(wrapper.find('h2').text()).toBe(
+      '¿Cuánto debo comprar para el asado?'
+    )
     wrapper.unmount()
   })
   it('matches the snapshot', () => {
