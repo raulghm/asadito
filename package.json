@@ -1,6 +1,6 @@
 {
   "name": "react-asado",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "license": "MIT",
   "scripts": {
     "start": "react-scripts start",
@@ -14,6 +14,29 @@
     "react-dom": "^16.5.0",
     "react-scripts": "1.1.5"
   },
+  "eslintConfig": {
+    "extends": [
+      "standard",
+      "standard-react"
+    ],
+    "plugins": [
+      "jest"
+    ],
+    "env": {
+      "jest": true
+    }
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|jpg|png)$": "<rootDir>/__mocks__/styleMock.js"
+    }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
   "devDependencies": {
     "@commitlint/cli": "^7.6.1",
     "@commitlint/config-conventional": "^7.6.0",

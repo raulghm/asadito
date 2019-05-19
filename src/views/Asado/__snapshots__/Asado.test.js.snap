@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Asado /> mount rendering matches the snapshot 1`] = `
+<Asado>
+  <div
+    className="Asado"
+  >
+    <div
+      className="Asado-wrapper"
+    >
+      <div
+        className="Asado-body"
+      >
+        <h1>
+          Calculadora de Asado 
+          <span
+            aria-label="meat"
+            role="img"
+          >
+            🍖
+          </span>
+        </h1>
+        <h2>
+          ¿Cuánto debo comprar para el asado?
+        </h2>
+        <div
+          className="Asado-select Asado-select--users"
+        >
+          <h3>
+            1- Indica la cantidad de comensales
+          </h3>
+          <div
+            className="Asado-select-body Asado-select-body--column"
+          >
+            <div
+              className="Asado-select-item"
+            >
+              <h4>
+                <div>
+                  Hombres
+                </div>
+                <span
+                  aria-label="men"
+                  role="img"
+                >
+                  👨
+                </span>
+              </h4>
+              <input
+                max={100}
+                min={0}
+                onChange={[Function]}
+                pattern="[0-9]*"
+                placeholder="0"
+                type="number"
+              />
+            </div>
+            <div
+              className="Asado-select-item"
+            >
+              <h4>
+                <div>
+                  Mujeres
+                </div>
+                <span
+                  aria-label="women"
+                  role="img"
+                >
+                  👩
+                </span>
+              </h4>
+              <input
+                max={100}
+                min={0}
+                onChange={[Function]}
+                pattern="[0-9]*"
+                placeholder="0"
+                type="number"
+              />
+            </div>
+            <div
+              className="Asado-select-item"
+            >
+              <h4>
+                <div>
+                  Niños
+                </div>
+                <span
+                  aria-label="children"
+                  role="img"
+                >
+                  👶
+                </span>
+              </h4>
+              <input
+                max={100}
+                min={0}
+                onChange={[Function]}
+                pattern="[0-9]*"
+                placeholder="0"
+                type="number"
+              />
+            </div>
+          </div>
+          <h3>
+            Total comensales: 
+            0
+          </h3>
+        </div>
+      </div>
+    </div>
+    <Footer>
+      <div
+        className="Footer"
+      >
+        raulghm 
+        <span
+          aria-label="ok_hand"
+          role="img"
+        >
+          👌
+        </span>
+         
+        <a
+          href="https://github.com/raulghm/react-asado"
+        >
+          github.com/raulghm/react-asado
+        </a>
+      </div>
+    </Footer>
+  </div>
+</Asado>
+`;
