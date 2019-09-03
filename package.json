@@ -1,7 +1,12 @@
 {
-  "name": "react-asado",
+  "name": "asadito",
   "version": "0.2.5",
   "license": "MIT",
+  "homepage": "https://github.com/raulghm/asadito",
+  "bugs": {
+    "url": "https://github.com/raulghm/asadito/issues"
+  },
+  "author": "Raúl Hernández <raulghm@gmail.com> (https://raulghm.com)",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
