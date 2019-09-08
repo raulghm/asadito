@@ -12,7 +12,8 @@ exports[`<Asado /> mount rendering matches the snapshot 1`] = `
         className="Asado-body"
       >
         <h1>
-          Calculadora de Asado 
+          Calculadora de Asado
+           
           <span
             aria-label="meat"
             role="img"
@@ -113,7 +114,8 @@ exports[`<Asado /> mount rendering matches the snapshot 1`] = `
       <div
         className="Footer"
       >
-        raulghm 
+        raulghm
+         
         <span
           aria-label="ok_hand"
           role="img"
