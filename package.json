@@ -1,6 +1,6 @@
 {
   "name": "asadito",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "license": "MIT",
   "homepage": "https://github.com/raulghm/asadito",
   "bugs": {
@@ -77,12 +77,10 @@
     }
   },
   "lint-staged": {
-    "linters": {
-      "src/**/*.js": [
-        "prettier-standard",
-        "git add"
-      ]
-    }
+    "src/**/*.js": [
+      "prettier-standard",
+      "git add"
+    ]
   },
   "commitlint": {
     "extends": [
