@@ -44,7 +44,7 @@
 
 @media (min-width: 30em) {
   .Asado-wrapper:before {
-    border-radius: 10px;
+    border-radius: 2px;
   }
 }
 
@@ -187,4 +187,33 @@
 
 .Asado span[role="img"] {
   margin-left: 4px;
+}
+
+.Asado-help {
+  word-break: break-word;
+}
+
+.Asado-help h4 {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.Asado-help h4:hover {
+  color: #fff;
+}
+
+.Asado-help h4 span[role="img"] {
+  font-size: .8rem;
+}
+
+.Asado-help a {
+  color: #fff;
+}
+
+.Asado-help ul {
+  padding: 0;
+}
+
+.Asado-help ul li {
+  margin-bottom: .6em;
 }

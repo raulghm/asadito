@@ -14,7 +14,7 @@ class Asado extends Component {
         women: 0,
         children: 0
       },
-      breadPrice: 1200,
+      breadPrice: 1290,
       carbonPrice: 1156,
       budgets,
       budgetIndex: 0,
@@ -50,13 +50,17 @@ class Asado extends Component {
     })
 
   handleBudget = event => {
-    const value = parseInt(event.target.value, 10)
-    const budget = this.state.budgets.find(item => item.id === value)
+    const budgetIndex = parseInt(event.target.value, 10)
+    const budget = this.state.budgets.find(item => item.id === budgetIndex)
 
     this.setState({
-      budgetIndex: event.target.value,
+      budgetIndex,
       budgetSelected: budget
     })
+  }
+
+  handleHelp = event => {
+    this.setState({ showHelp: !this.state.showHelp })
   }
 
   peopleCount = () => {
@@ -117,14 +121,14 @@ class Asado extends Component {
       carbonCount = this.carbonCount()
     } = this.state
 
-    const meat = meatCount * budgetSelected.meatPrice
-
+    const meat =
+      meatCount *
+      (budgetSelected.meats.reduce((acc, meat) => acc + meat.value, 0) /
+        budgetSelected.meats.length)
     const sausage = sausageSelected
       ? sausageCount * budgetSelected.sausagePrice + breadCount * breadPrice
       : 0
-
     const carbon = carbonSelected ? carbonCount * carbonPrice : 0
-
     return this.round(meat + sausage + carbon, -1)
   }
 
@@ -146,7 +150,8 @@ class Asado extends Component {
       breadCount = this.breadCount(),
       carbonCount = this.carbonCount(),
       sausageSelected,
-      carbonSelected
+      carbonSelected,
+      showHelp
     } = this.state
 
     return (
@@ -272,12 +277,10 @@ class Asado extends Component {
                 <div className='Asado-select-body'>
                   Opciones de carnes para comprar:
                   <p>
-                    {budgetSelected.options.map((option, i) => {
-                      if (i === budgetSelected.options.length - 1) {
-                        return `${option}.`
-                      } else {
-                        return `${option}, `
-                      }
+                    {budgetSelected.meats.map((option, i) => {
+                      return i === budgetSelected.meats.length - 1
+                        ? `${option.name}.`
+                        : `${option.name}, `
                     })}
                   </p>
                   <h4>
@@ -316,6 +319,62 @@ class Asado extends Component {
                 </div>
               </div>
             )}
+
+            <div class='Asado-help' onClick={this.handleHelp.bind(this)}>
+              <h4>
+                ¿Cómo funciona?{' '}
+                <span role='img' aria-label='eyes'>
+                  👀
+                </span>
+              </h4>
+              {showHelp && (
+                <>
+                  <ul>
+                    <li>
+                      Se tomaron como referencias valores de supermercados Lider
+                      y Jumbo, promediando estos valores y segmentando en 4
+                      grupos para generar distintos presupuestos.
+                    </li>
+                    <li>
+                      Solo se tomaron en cuenta carnes de vacuno al vacío.
+                    </li>
+                    <li>
+                      No se consideran precios en oferta, solo valores normales.
+                    </li>
+                    <li>
+                      Salvo algunos casos existe una diferencia de hasta 2000
+                      pesos entre tipo de carne por segmento.
+                    </li>
+                    <li>
+                      Para calcular cantidad de carne se consideran los
+                      siguientes gramos que come comúnmente cada persona: 350
+                      hombre, 250 mujer y 200 un niño.
+                    </li>
+                    <li>
+                      La división de valores considera solo adultos, los niños
+                      no pagan.
+                    </li>
+                  </ul>
+
+                  <div>
+                    <p>~</p>
+                    <ul>
+                      <li>
+                        Código fuente disponible para mejorar o modificar a
+                        gusto{' '}
+                        <a href='https://github.com/raulghm/asadito'>por acá</a>
+                      </li>
+                      <li>
+                        Imagen de fondo tomada prestada{' '}
+                        <a href='https://unsplash.com/photos/jeiqzOgwwKU'>
+                          desde Unplash
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </>
+              )}
+            </div>
           </div>
         </div>
 
