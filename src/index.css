@@ -8,11 +8,12 @@ body {
   font-family: 'Cutive Mono', sans-serif;
   background-color: #252525;
   font-weight: lighter;
+  text-shadow: 1px 1px rgba(0, 0, 0, .8);
 }
 
 @media (min-width: 30em) {
   body {
-    background-image: url(./assets/img/photo-1466220549276-aef9ce186540.jpg);
+    background-image: url(https://images.unsplash.com/photo-1508615263227-c5d58c1e5821?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1280&q=80);
     background-size: cover;
     background-position: 50%;
   }
