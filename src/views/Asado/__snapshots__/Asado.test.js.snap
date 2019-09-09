@@ -108,25 +108,41 @@ exports[`<Asado /> mount rendering matches the snapshot 1`] = `
             0
           </h3>
         </div>
+        <div
+          className="Asado-help"
+          onClick={[Function]}
+        >
+          <h4>
+            ¿Cómo funciona?
+             
+            <span
+              aria-label="eyes"
+              role="img"
+            >
+              👀
+            </span>
+          </h4>
+        </div>
       </div>
     </div>
     <Footer>
       <div
         className="Footer"
       >
-        raulghm
-         
-        <span
-          aria-label="ok_hand"
-          role="img"
-        >
-          👌
-        </span>
-         
         <a
-          href="https://github.com/raulghm/react-asado"
+          href="https://github.com/raulghm/asadito"
         >
-          github.com/raulghm/react-asado
+          Otro aplicativo más por 
+          <b>
+            raulghm
+          </b>
+           
+          <span
+            aria-label="ok_hand"
+            role="img"
+          >
+            👌
+          </span>
         </a>
       </div>
     </Footer>

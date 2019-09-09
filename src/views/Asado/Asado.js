@@ -320,7 +320,7 @@ class Asado extends Component {
               </div>
             )}
 
-            <div class='Asado-help' onClick={this.handleHelp.bind(this)}>
+            <div className='Asado-help' onClick={this.handleHelp.bind(this)}>
               <h4>
                 ¿Cómo funciona?{' '}
                 <span role='img' aria-label='eyes'>
